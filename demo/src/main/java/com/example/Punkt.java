@@ -9,8 +9,16 @@ public class Punkt {
         y_koord = y;
     }
 
-    public void setPunkt(Punkt p, int x, int y){
-        p.x_koord = x;
-        p.y_koord = y;
+    public void setX(int x){
+        x_koord = x;
+    }
+    public void setY(int y){
+        y_koord = y;
+    }
+    public int getX(){
+        return x_koord;
+    }
+    public int getY(){
+        return y_koord;
     }
 }
