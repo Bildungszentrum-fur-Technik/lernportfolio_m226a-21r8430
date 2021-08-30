@@ -7,7 +7,7 @@ public class Dreieck {
     private Punkt punkt2;
     private Punkt punkt3;
 
-    public void Dreieck(Punkt p1, Punkt p2, Punkt p3){
+    public Dreieck(Punkt p1, Punkt p2, Punkt p3){
         punkt1 = p1;
         punkt2 = p2;
         punkt3 = p3;

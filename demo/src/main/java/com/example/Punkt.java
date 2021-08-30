@@ -4,7 +4,7 @@ public class Punkt {
     private int x_koord;
     private int y_koord;
 
-    public void Punkt(int x, int y){
+    public Punkt(int x, int y){
         x_koord = x;
         y_koord = y;
     }

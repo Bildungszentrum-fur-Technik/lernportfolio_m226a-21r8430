@@ -6,7 +6,7 @@ public class Viereck {
     private Punkt punkt3;
     private Punkt punkt4;
 
-    public void Viereck(Punkt p1, Punkt p2, Punkt p3, Punkt p4){
+    public Viereck(Punkt p1, Punkt p2, Punkt p3, Punkt p4){
         punkt1 = p1;
         punkt2 = p2;
         punkt3 = p3;
