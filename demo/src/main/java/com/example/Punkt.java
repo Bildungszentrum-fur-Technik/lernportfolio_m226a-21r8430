@@ -1,24 +1,24 @@
 package com.example;
 
 public class Punkt {
-    private int x_koord;
-    private int y_koord;
+    private double x_koord;
+    private double y_koord;
 
-    public Punkt(int x, int y){
+    public Punkt(double x, double y){
         x_koord = x;
         y_koord = y;
     }
 
-    public void setX(int x){
+    public void setX(double x){
         x_koord = x;
     }
-    public void setY(int y){
+    public void setY(double y){
         y_koord = y;
     }
-    public int getX(){
+    public double getX(){
         return x_koord;
     }
-    public int getY(){
+    public double getY(){
         return y_koord;
     }
 }
