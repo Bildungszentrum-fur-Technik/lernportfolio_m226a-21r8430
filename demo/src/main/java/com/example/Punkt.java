@@ -3,6 +3,8 @@ package com.example;
 public class Punkt {
     private double x_koord;
     private double y_koord;
+    private double minusrange;
+    private double plusrange;
 
 
     public Punkt(double x, double y){
