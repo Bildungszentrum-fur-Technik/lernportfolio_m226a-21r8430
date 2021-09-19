@@ -16,3 +16,32 @@
 
 ## Schritt 4
 * Es gehen alle ausser kontoInhaber da dieser private ist und wir uns ausserhalb der Klasse befinden
+
+## Schritt 5
+* Alle wurden auf Privat gesetzt und sind jetzt nur noch über kreeirte instanzen von Konto erreichbar
+
+## Schritt 6
+* Scanner erstellt zur eingabe und alle Daten eingelesen und ausgegeben
+
+## Schritt 7 UML
+
+```plantuml
+@startuml
+class Konto{
+    -String kontoInhaber
+    -String nameKonto
+    -int nummerKonto
+    -double saldoKonto
+    +Konto()
+    +String getKontoInhaber() : String kontoInhaber
+    +String setKontoInhaber(String kontoInhaber) : void
+    +String getNameKonto() : String nameKonto
+    +String setNameKonto(String nameKonto) : void
+    +int getNummerKonto() : int nummerKonto
+    +int setNummerKonto(int nummerKonto) : void
+    +double getSaldoKonto() : double saldoKonto
+    +double setSaldoKonto(double saldoKonto) : void
+    
+}
+@enduml
+```
