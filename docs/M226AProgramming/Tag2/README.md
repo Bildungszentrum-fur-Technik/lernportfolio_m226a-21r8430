@@ -33,6 +33,10 @@ class Konto{
     -int nummerKonto
     -double saldoKonto
     +Konto()
+    +Konto(String kkontoInhaber, String knameKonto, int nummerKonto, double saldoKonto)
+    +Konto(String kkontoInhaber)
+    +Konto(String kkontoInhaber, String knameKonto)
+    +Konto(String kkontoInhaber, int nummerKonto)
     +String getKontoInhaber() : String kontoInhaber
     +String setKontoInhaber(String kontoInhaber) : void
     +String getNameKonto() : String nameKonto
@@ -41,6 +45,11 @@ class Konto{
     +int setNummerKonto(int nummerKonto) : void
     +double getSaldoKonto() : double saldoKonto
     +double setSaldoKonto(double saldoKonto) : void
+    +ausgabe(String stringAusgabe)
+    +String getKontoInhaberOut()
+    +String getNameKontoOut()
+    +int getNummerKontoOut()
+    +Double getSaldoKontoOut()
     
 }
 @enduml
