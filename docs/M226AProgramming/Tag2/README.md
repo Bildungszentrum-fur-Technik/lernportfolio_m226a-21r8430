@@ -32,6 +32,7 @@ class Konto{
     -String nameKonto
     -int nummerKonto
     -double saldoKonto
+    -{static} int anzahlInstanzen
     +Konto()
     +Konto(String kkontoInhaber, String knameKonto, int nummerKonto, double saldoKonto)
     +Konto(String kkontoInhaber)
@@ -50,6 +51,7 @@ class Konto{
     +String getNameKontoOut()
     +int getNummerKontoOut()
     +Double getSaldoKontoOut()
+    +{static} int ausgabeAnzahlInstanzen
     
 }
 @enduml
