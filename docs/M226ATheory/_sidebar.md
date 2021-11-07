@@ -2,4 +2,5 @@
 * [Tag2](M226ATheory/Tag2/)
 * [Tag3](M226ATheory/Tag3/)
 * [Tag4](M226ATheory/Tag4/)
-* [Tag4](M226ATheory/Tag5/)
+* [Tag5](M226ATheory/Tag5/)
+* [Tag6](M226ATheory/Tag6/)

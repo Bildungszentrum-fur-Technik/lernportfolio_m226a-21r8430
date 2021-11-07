@@ -63,3 +63,67 @@ class Kunde {
 
 * Die Arrays sind vom Typ Buch und vom Typ Kunde.
 * Man sollte nicht mit Strings arbeiten da das keine Elente sind mit denen man überhaupt irgendwas anfangen könnte.
+
+## Auftrag 5
+
+* ArrayLists können erstellt werden
+
+```java
+ArrayList<Kunde> Kunden = new ArrayList<Kunde>();
+```
+
+* Es kann hinzugefügt, gelöscht, geholt und bearbeitet werden
+
+## Beispiel-Code Verwendung von ArrayLists
+
+```java
+import java.util.ArrayList;
+
+public class Kunde {
+    private String name;
+    private ArrayList<Buch> bucharray = new ArrayList<Buch>();
+
+    public void setNameKunde(String name){
+        this.name = name;
+    }
+    public void BuchLeihen(Buch buch){
+        if(!buch.getStatus()){
+            for (int i = 0; i < bucharray.size(); i++ ){
+                if(bucharray.get(i) == null){
+                    bucharray.add(i, buch);
+                    buch.ausleihen();
+                    System.out.println("Buch positioniert an Stelle " + i);
+                }
+            }
+            
+        }
+        else{
+            System.out.println("Das buch ist schon ausgeliehen");
+        }
+    }
+    public void ListeAusgeben(){
+        for(int i = 0; i< bucharray.size() ; i++){
+            if(bucharray.get(i) != null){
+                System.out.println(bucharray.get(i).getTitel());
+            }
+        }
+    }
+    public void BuchZurueckgeben(Buch buch){
+        if(buch.getStatus()){
+            boolean buchgefunden = false;
+            for (int i = 0; i<bucharray.size() && !buchgefunden; i++){
+                if(bucharray.get(i) == buch){
+                    bucharray.remove(i);
+                    buchgefunden = true;
+                    buch.zurueck();
+                    System.out.println("Buch zurück gegeben" + buch.getTitel());
+                }
+            }
+            if(!buchgefunden){
+                System.out.println("Fehler: Buch konnte nicht zurückgegeben werden");
+            }
+
+        }
+    }
+}
+```
