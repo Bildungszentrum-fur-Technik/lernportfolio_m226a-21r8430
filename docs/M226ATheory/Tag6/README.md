@@ -1,4 +1,6 @@
-# Aggregation (Ganzes-Teile-Assoziation)
+# Tag6
+
+## Aggregation (Ganzes-Teile-Assoziation)
 
 * Eine Aggregation ist eine Assoziation, deren beteiligte Klassen ein Ganzes-Teile-Hierarchie darstellen.
 

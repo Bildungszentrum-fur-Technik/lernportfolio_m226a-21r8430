@@ -1,4 +1,6 @@
-# Repetition: Objekte, Methoden und Referenzen
+# Tag2
+
+## Repetition: Objekte, Methoden und Referenzen
 
 ## Scanner
 Damit Daten über die Konsole eingelesen werden können, muss zuerst ein Scanner-Objekt erstellt werden. Erst dann können auf dem Objekt die Zeilen über eine Methode eingelesen werden.
