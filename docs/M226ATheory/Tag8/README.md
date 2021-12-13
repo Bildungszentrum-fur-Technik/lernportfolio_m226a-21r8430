@@ -50,3 +50,24 @@ end
 "App" --> "v:Videothek" : break
 @enduml
 ```
+```plantuml
+@startuml
+
+participant "App"
+participant ":Videothek"
+participant ":Kunde"
+
+activate "App"
+loop 1-3 /während nicht angemeldet
+"App" --> ":Videothek" : anmelden()
+activate ":Videothek"
+":Videothek" --> ":Videothek" : getKunde()
+break Kunde == null
+":Videothek" --> "App" : melde Abbruch
+end
+":Videothek" --> ":Kunde" : prüefePwd
+activate ":Kunde"
+":Kunde" --> ":Videothek" : ergebnis, boolean
+deactivate ":Kunde"
+@enduml
+```
